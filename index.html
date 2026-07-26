@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NOVAXWARE SEO Department Training Manual — Complete guide to keyword research, domain buying, website creation, Cloudflare deployment, and Google Search Console indexing." />
+  <meta name="robots" content="noindex" />
+  <title>SEO Training Manual - NOVAXWARE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-black relative">
+
+  <button id="nav-toggle" class="btn-nav-toggle fixed top-4 left-4 sm:top-6 sm:left-6 z-50">Show Navigation</button>
+  <button id="back-btn" class="btn-back fixed top-4 right-4 sm:top-6 sm:right-6 z-50">← Back</button>
+
+  <aside id="sidebar">
+    <div class="sidebar-header" style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;">
+      <div>
+        <h1>NOVAXWARE</h1>
+        <p>SEO Training</p>
+      </div>
+      <button id="nav-close" class="close-nav-btn lg:hidden">✕</button>
+    </div>
+    <nav id="nav-list"></nav>
+  </aside>
+
+  <main class="main-content" id="main">
+
+    <!-- SECTION 1: Foundation -->
+    <section class="section" data-title="Foundation: What We Sell" id="section-1">
+      <h2 class="section-title">Foundation: What We Sell</h2>
+      <div class="content-block">
+        <p class="intro">This article is written by the senior SEO lead at NOVAXWARE. I manage the full SEO department and have built multiple ranking gaming websites that drive consistent organic traffic and sales for our products.</p>
+        <p class="intro">This article shares my complete SEO workflow — from keyword research to Google indexing. It is written for SEO staff, new hires, and managers.</p>
+        <p class="intro">The questions below must be understood clearly. Managers can ask these at any time during your employment.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>What Do We Sell?</h3>
+        <p>What we sell is very simple.</p>
+        <p class="bold-line">We sell software subscriptions.</p>
+        <p>In gaming language, these are called cheats. In simple terms, they are paid software tools made for VALORANT.</p>
+        <p>VALORANT is one of the hardest FPS (First Person Shooter) games. The competition is heavy, from all regions and skill levels.</p>
+        <p class="bold-line">Our product removes that pressure.</p>
+        <p class="bold-line">We sell keys.</p>
+        <p>A key is access to our software for a limited time. These keys unlock products from our store, such as:</p>
+        <ul>
+          <li>XRAY</li>
+          <li>Private products</li>
+          <li>Other premium builds</li>
+        </ul>
+        <p>We are not selling services or accounts. We are selling access to our products.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Why Do People Buy Our Product?</h3>
+        <p>People buy because VALORANT is not easy.</p>
+        <ul>
+          <li>Losing is frustrating</li>
+          <li>Progress is slow</li>
+          <li>Competition is extreme</li>
+        </ul>
+        <p>Our software changes the experience.</p>
+        <p>Once a customer feels control, confidence, and consistency — they don't want to go back.</p>
+        <p>That's why many customers buy again next month, stay for months, and stay for years. They are not buying once. They are buying comfort and stability.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>What Does SEO Do?</h3>
+        <p>Lead generation reaches customers through DMs and conversations.</p>
+        <p class="bold-line">SEO reaches customers through Google.</p>
+        <p>When someone searches "valorant cheats" or "fortnite aimbot" on Google, our SEO websites appear in the results. They click, read the site, and find their way to our store.</p>
+        <p>SEO is passive traffic. Once a site ranks, it works 24/7 without you sending a single message.</p>
+        <p>Your job is to build websites that rank on Google and convert visitors into customers.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>The SEO Workflow (Overview)</h3>
+        <p>Every site you build follows the same pipeline:</p>
+        <ol>
+          <li><strong>Keyword research</strong> — find what people search for</li>
+          <li><strong>Domain purchase</strong> — buy a matching domain on Cloudflare</li>
+          <li><strong>Website creation</strong> — build the site using Cursor AI Pro</li>
+          <li><strong>GitHub push</strong> — push code to the respective repo</li>
+          <li><strong>Cloudflare deploy</strong> — deploy the project on Cloudflare Pages</li>
+          <li><strong>Domain connection</strong> — connect the bought domain to the deployment</li>
+          <li><strong>Google Search Console</strong> — add domain, verify, submit sitemap.xml</li>
+          <li><strong>Monitor & optimize</strong> — track indexing and fix issues</li>
+        </ol>
+        <p>Example: You buy <code>fortnitecheats.com</code>, build a Fortnite cheats website on Cursor Pro, push to GitHub, deploy on Cloudflare, connect the domain, and submit the sitemap to Google Search Console.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Final Note</h3>
+        <p>This page is foundation.</p>
+        <p>If you don't understand what we sell, why people buy, what SEO does, and the full workflow — you should not move forward.</p>
+      </div>
+
+      <div class="action-buttons">
+        <button class="btn-primary" data-next="next">Understood</button>
+        <button class="btn-secondary" data-next="stay">Still Confusing</button>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Complete Workflow -->
+    <section class="section hidden" data-title="The Complete Workflow" id="section-2">
+      <h2 class="section-title">The Complete Workflow</h2>
+      <div class="content-block">
+        <p class="intro">Below is the full end-to-end workflow for building and deploying one SEO website. Follow every step in order. Skipping steps causes indexing failures.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 1 — Keyword Research</h3>
+        <p>Before buying any domain, you must know what people are searching for.</p>
+        <p>Use tools like Google Keyword Planner, Ahrefs, Ubersuggest, or manual Google searches.</p>
+        <p>Look for:</p>
+        <ul>
+          <li>High search volume keywords</li>
+          <li>Low to medium competition</li>
+          <li>Game-specific terms (valorant cheats, fortnite hacks, etc.)</li>
+          <li>Long-tail keywords (best valorant esp 2026, undetected fortnite cheat)</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 2 — Buy Domain on Cloudflare</h3>
+        <p>Go to Cloudflare Registrar and search for a domain that matches your keyword.</p>
+        <p>Example: keyword "fortnite cheats" → domain <code>fortnitecheats.com</code></p>
+        <p>Rules for domain selection:</p>
+        <ul>
+          <li>Keep it short and memorable</li>
+          <li>Include the main keyword if possible</li>
+          <li>Use .com when available</li>
+          <li>Avoid hyphens and numbers when possible</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 3 — Build Website on Cursor AI Pro</h3>
+        <p>Open Cursor Pro and create a new project for the domain.</p>
+        <p>The website must include:</p>
+        <ul>
+          <li>Game-specific content and branding</li>
+          <li>Product pages linking to NOVAXWARE store</li>
+          <li>Blog section with SEO articles</li>
+          <li>Proper metadata (title, description, OG tags)</li>
+          <li>Optimized images with alt text</li>
+          <li>Internal linking between pages</li>
+          <li>A generated <code>sitemap.xml</code></li>
+          <li>A <code>robots.txt</code> file</li>
+        </ul>
+        <p>Maintain the required UI and structure. Replace all placeholder content with game-specific text, images, and branding.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 4 — Push to GitHub</h3>
+        <p>Cursor Pro generates the code. You push it to the respective GitHub repo.</p>
+        <div class="demo-box">
+          <p><span class="label">TERMINAL:</span> git init</p>
+          <p><span class="label">TERMINAL:</span> git add .</p>
+          <p><span class="label">TERMINAL:</span> git commit -m "Initial site deploy"</p>
+          <p><span class="label">TERMINAL:</span> git remote add origin https://github.com/org/fortnitecheats.git</p>
+          <p><span class="label">TERMINAL:</span> git push -u origin main</p>
+        </div>
+        <p>Every domain gets its own repo. Never mix multiple sites in one repo.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 5 — Deploy on Cloudflare Pages</h3>
+        <p>Go to Cloudflare Dashboard → Workers & Pages → Create → Connect to Git.</p>
+        <p>Select the GitHub repo, set build settings, and deploy.</p>
+        <p>For static sites, build command is usually empty and output directory is <code>/</code> or <code>dist</code>.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 6 — Connect Domain</h3>
+        <p>In Cloudflare Pages project settings → Custom domains → Add the purchased domain.</p>
+        <p>Cloudflare auto-configures DNS since the domain is already on Cloudflare.</p>
+        <p>SSL is automatic. Wait for the certificate to activate (usually a few minutes).</p>
+      </div>
+
+      <div class="content-block">
+        <h3>STEP 7 — Google Search Console</h3>
+        <p>Go to <a href="https://search.google.com/search-console" style="color:#fff;">Google Search Console</a>.</p>
+        <p>Add the domain as a property → verify via DNS TXT record on Cloudflare → submit <code>sitemap.xml</code>.</p>
+        <div class="demo-box">
+          <p><span class="label">GSC:</span> Add property → Domain → fortnitecheats.com</p>
+          <p><span class="label">CLOUDFLARE DNS:</span> Add TXT record for verification</p>
+          <p><span class="label">GSC:</span> Sitemaps → Add → https://fortnitecheats.com/sitemap.xml</p>
+          <p><span class="label">GSC:</span> URL Inspection → Request indexing for homepage + key pages</p>
+        </div>
+      </div>
+
+      <div class="author-note">
+        <h4>Author Note:</h4>
+        <p>I didn't rank my first site by rushing. I followed every step exactly. The sites that fail indexing are always the ones where someone skipped DNS verification or forgot the sitemap.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Keyword Research -->
+    <section class="section hidden" data-title="Keyword Research That Converts" id="section-3">
+      <h2 class="section-title">Keyword Research That Converts</h2>
+      <div class="content-block">
+        <p class="intro">Keyword research is the foundation of every site you build. Wrong keywords = wasted domains. Right keywords = free traffic forever.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Start With the Game</h3>
+        <p>Every site targets one game. VALORANT, Fortnite, CS2, Apex — pick one and go deep.</p>
+        <p>Search patterns follow the game name + intent word:</p>
+        <ul>
+          <li>valorant cheats</li>
+          <li>valorant hacks</li>
+          <li>valorant esp</li>
+          <li>valorant aimbot</li>
+          <li>fortnite cheats undetected</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Analyze Search Intent</h3>
+        <p>Not all keywords are equal. Focus on buying intent.</p>
+        <p><strong>High intent (target these):</strong></p>
+        <ul>
+          <li>"buy valorant cheats"</li>
+          <li>"best undetected fortnite hack"</li>
+          <li>"valorant cheat download"</li>
+        </ul>
+        <p><strong>Low intent (avoid as primary):</strong></p>
+        <ul>
+          <li>"what is a valorant cheat"</li>
+          <li>"are valorant cheats real"</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Check Competition</h3>
+        <p>Search the keyword on Google. Look at who ranks on page 1.</p>
+        <p>If page 1 is full of massive authority sites (IGN, Reddit, YouTube), the keyword may be too competitive for a new domain.</p>
+        <p>If page 1 has smaller niche sites, forums, or outdated pages — you can compete.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Long-Tail Keywords Win Early</h3>
+        <p>New domains won't rank for "valorant cheats" immediately. Start with long-tail:</p>
+        <ul>
+          <li>"valorant esp only cheat 2026"</li>
+          <li>"best private valorant hack undetected"</li>
+          <li>"fortnite soft aim cheat download"</li>
+        </ul>
+        <p>Build blog content around these. As authority grows, target broader terms.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Match Domain to Primary Keyword</h3>
+        <p>Your domain should contain or closely match your #1 keyword.</p>
+        <p>Keyword: "fortnite cheats" → Domain: <code>fortnitecheats.com</code></p>
+        <p>Keyword: "valorant esp" → Domain: <code>valorantesphacks.com</code></p>
+        <p>Exact-match domains still carry SEO weight in this niche.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Document Everything</h3>
+        <p>Before buying a domain, write down:</p>
+        <ul>
+          <li>Primary keyword + search volume</li>
+          <li>5–10 secondary keywords for blog posts</li>
+          <li>Competitor URLs ranking on page 1</li>
+          <li>Your content plan (homepage, product page, 3–5 blog posts)</li>
+        </ul>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Closing Note</h3>
+        <p>Keyword research is not optional. It is the difference between a site that ranks in 2 weeks and a site that never indexes.</p>
+        <p>Spend at least 30 minutes on research before every domain purchase.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Common SEO Mistakes -->
+    <section class="section hidden" data-title="Common SEO Mistakes" id="section-4">
+      <h2 class="section-title">Common SEO Mistakes</h2>
+      <div class="content-block">
+        <p class="intro">Most SEO employees fail not because they can't build websites, but because of basic mistakes. Read this carefully. These are silent killers.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Buying Domain Before Research</h3>
+        <p>❌ Buying a domain because it "sounds good"</p>
+        <p>❌ No keyword data behind the purchase</p>
+        <p>Every domain costs money. Research first, buy second.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Duplicate Content Across Sites</h3>
+        <p>❌ Copy-pasting the same content on multiple domains</p>
+        <p>❌ Using identical blog posts across sites</p>
+        <p>Google penalizes duplicate content. Every site must have unique text, unique images, and unique structure.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Forgetting sitemap.xml</h3>
+        <p>❌ Deploying without a sitemap</p>
+        <p>❌ Not submitting sitemap to Google Search Console</p>
+        <p>Without a sitemap, Google may never discover your pages. Always generate and submit one.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Skipping Google Search Console Verification</h3>
+        <p>❌ Deploying the site and moving on</p>
+        <p>❌ Not adding the DNS TXT record</p>
+        <p>A live site with no GSC verification = invisible to Google. Verification takes 5 minutes. Do it every time.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Thin Content</h3>
+        <p>❌ Homepage with 200 words</p>
+        <p>❌ No blog section</p>
+        <p>❌ Missing product descriptions</p>
+        <p>Google ranks pages with depth. Aim for 800+ words on key pages and regular blog posts.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Missing Meta Tags</h3>
+        <p>❌ No title tag</p>
+        <p>❌ No meta description</p>
+        <p>❌ No Open Graph tags</p>
+        <p>Every page needs a unique title (with keyword) and meta description. This is basic on-page SEO.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>7. Broken Internal Links</h3>
+        <p>❌ Links pointing to 404 pages</p>
+        <p>❌ No internal linking between blog posts and product pages</p>
+        <p>Internal links help Google crawl your site and distribute ranking power.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>8. Ignoring Mobile Responsiveness</h3>
+        <p>❌ Site looks broken on mobile</p>
+        <p>Google uses mobile-first indexing. If your site fails on mobile, it won't rank.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>9. Not Requesting Indexing</h3>
+        <p>❌ Submitting sitemap and waiting forever</p>
+        <p>After sitemap submission, use URL Inspection in GSC to manually request indexing for your homepage and top 5 pages.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>10. Giving Up Too Early</h3>
+        <p>❌ Abandoning a site after 1 week</p>
+        <p>New domains take 2–8 weeks to start ranking. Keep adding content. Keep monitoring GSC. Patience wins in SEO.</p>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Note</h3>
+        <p>I didn't scale by being smart. I scaled by not making these mistakes anymore.</p>
+        <p>Most people don't fail because they can't build sites. They fail because they skip the boring steps.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Manager Authority -->
+    <section class="section hidden" data-title="Manager Authority" id="section-5">
+      <h2 class="section-title">Manager Authority</h2>
+      <div class="content-block">
+        <p class="intro">This page explains what managers can do, why they do it, and how the SEO system works. If you are part of the NOVAXWARE team, this applies to you fully.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Managers Can Reassign Domains</h3>
+        <p>If a manager believes you are:</p>
+        <ul>
+          <li>Not deploying sites on time</li>
+          <li>Skipping verification steps</li>
+          <li>Building low-quality sites</li>
+          <li>Wasting domains on bad keywords</li>
+        </ul>
+        <p>They can reassign domains and projects to other team members. This is not punishment. This is damage control.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Managers Approve Domain Purchases</h3>
+        <p>Before buying any domain, keyword research must be reviewed.</p>
+        <p>Managers check:</p>
+        <ul>
+          <li>Search volume and competition data</li>
+          <li>Domain name quality</li>
+          <li>Content plan viability</li>
+        </ul>
+        <p>Do not buy domains without approval on high-cost purchases.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Managers Monitor Deployment Quality</h3>
+        <p>Every deployed site is checked for:</p>
+        <ul>
+          <li>SSL active</li>
+          <li>Sitemap submitted</li>
+          <li>GSC verified</li>
+          <li>Meta tags present</li>
+          <li>Mobile responsive</li>
+          <li>Unique content</li>
+        </ul>
+        <p>Sites that fail review will be sent back for fixes.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Daily Reporting</h3>
+        <p>You are expected to report daily:</p>
+        <ul>
+          <li>Domains purchased</li>
+          <li>Sites deployed</li>
+          <li>GSC verifications completed</li>
+          <li>Indexing status</li>
+          <li>Issues encountered</li>
+        </ul>
+        <p>Missing daily reports without reason will be flagged.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. What Happens When Sites Don't Rank</h3>
+        <p>If a site shows no indexing after 4 weeks:</p>
+        <ul>
+          <li>Manager reviews the site for technical issues</li>
+          <li>Content quality is audited</li>
+          <li>Keyword strategy is re-evaluated</li>
+          <li>Fix plan is assigned or domain is retired</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Final Rule: Respect the System</h3>
+        <p>Managers exist to protect quality, protect budgets, and protect long-term rankings.</p>
+        <p>If a manager corrects your work, accept it and move forward.</p>
+        <p>People who last here respect authority, stay disciplined, and deliver daily.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 6: Market & Competition -->
+    <section class="section hidden" data-title="The Market & Competition" id="section-6">
+      <h2 class="section-title">The Market & Competition</h2>
+      <div class="content-block">
+        <p class="intro">Before you can rank properly, you must understand the SEO landscape for gaming cheats. Most employees fail because they don't understand the market.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. The Gaming Cheat SEO Market</h3>
+        <p>This market is:</p>
+        <ul>
+          <li>High search volume</li>
+          <li>High competition</li>
+          <li>Full of spam sites</li>
+          <li>Full of short-term operators</li>
+        </ul>
+        <p>Thousands of people search for cheats daily. The opportunity is massive, but so is the competition.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. How Competitors Operate</h3>
+        <p>Most competitor SEO sites:</p>
+        <ul>
+          <li>Use PBNs (Private Blog Networks)</li>
+          <li>Spam backlinks</li>
+          <li>Copy content from each other</li>
+          <li>Get deindexed regularly</li>
+          <li>Abandon domains quickly</li>
+        </ul>
+        <p>Their goal is fast traffic, not long-term rankings. That's why their sites disappear every few months.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. How NOVAXWARE SEO Is Different</h3>
+        <p>We build sites that last:</p>
+        <ul>
+          <li>Unique, high-quality content</li>
+          <li>Proper technical SEO</li>
+          <li>Clean Cloudflare infrastructure</li>
+          <li>Regular blog updates</li>
+          <li>Proper GSC monitoring</li>
+        </ul>
+        <p>We don't spam. We don't cut corners. We build authority over time.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Why Exact-Match Domains Still Work</h3>
+        <p>In this niche, domains like <code>fortnitecheats.com</code> carry significant weight.</p>
+        <p>Google still gives preference to domains that match search queries, especially in commercial niches.</p>
+        <p>This is our primary advantage. Use it.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Content Is the Moat</h3>
+        <p>Anyone can buy a domain. Not everyone will write 10 blog posts, optimize images, and build internal links.</p>
+        <p>Content depth is what separates ranking sites from dead sites.</p>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Note</h3>
+        <p>I didn't win by outspending competitors. I won by building better sites that Google actually wants to rank.</p>
+        <p>Focus on quality. The market rewards it.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Domain Selection -->
+    <section class="section hidden" data-title="Domain Selection Strategy" id="section-7">
+      <h2 class="section-title">Domain Selection Strategy</h2>
+      <div class="content-block">
+        <p class="intro">Choosing the right domain is half the battle. A good domain with decent content will rank faster than perfect content on a bad domain.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Keyword-in-Domain Priority</h3>
+        <p>Always prefer domains that contain your primary keyword:</p>
+        <ul>
+          <li>fortnitecheats.com ✓</li>
+          <li>valoranthacks.net ✓</li>
+          <li>bestgamingtools.com ✗ (too generic)</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>2. TLD Selection</h3>
+        <p>Priority order:</p>
+        <ol>
+          <li><strong>.com</strong> — always first choice</li>
+          <li><strong>.net</strong> — acceptable alternative</li>
+          <li><strong>.io</strong> — acceptable for tech/gaming</li>
+          <li><strong>.xyz / .site</strong> — avoid unless nothing else available</li>
+        </ol>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Domain Length</h3>
+        <p>Shorter is better. Aim for under 20 characters.</p>
+        <p>✓ fortnitecheats.com (16 chars)</p>
+        <p>✗ best-fortnite-cheats-download.com (too long)</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Avoid Trademarks</h3>
+        <p>Do not use official game company names in domains if avoidable.</p>
+        <p>✓ fortnitecheats.com (borderline — game name + generic word)</p>
+        <p>✗ officialfortnitehack.com (claims official status — risky)</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Check Domain History</h3>
+        <p>Before buying, check if the domain was previously used:</p>
+        <ul>
+          <li>Use archive.org (Wayback Machine)</li>
+          <li>Check if it was penalized or used for spam</li>
+          <li>Avoid domains with bad history</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Buy Only on Cloudflare</h3>
+        <p>All domains must be purchased through Cloudflare Registrar.</p>
+        <p>Reasons:</p>
+        <ul>
+          <li>At-cost pricing (no markup)</li>
+          <li>DNS management in same dashboard as deployment</li>
+          <li>Free SSL</li>
+          <li>Fast propagation</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>7. One Domain = One Site = One Repo</h3>
+        <p>Never attach multiple domains to one site (unless manager approves redirect strategy).</p>
+        <p>Each domain gets its own website, its own GitHub repo, and its own Cloudflare Pages project.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 8: On-Page SEO -->
+    <section class="section hidden" data-title="On-Page SEO Essentials" id="section-8">
+      <h2 class="section-title">On-Page SEO Essentials</h2>
+      <div class="content-block">
+        <p class="intro">On-page SEO is everything you control directly on the website. Do this right on every single page of every site you build.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Title Tags</h3>
+        <p>Every page needs a unique title tag with the primary keyword.</p>
+        <p>Format: <code>Primary Keyword | Brand Name</code></p>
+        <p>Example: <code>Fortnite Cheats - Undetected Hacks 2026 | FortniteCheats</code></p>
+        <p>Keep under 60 characters.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Meta Descriptions</h3>
+        <p>Write a compelling 150–160 character description for every page.</p>
+        <p>Include the keyword naturally. Make it click-worthy.</p>
+        <p>Example: <code>Get the best undetected Fortnite cheats with ESP, aimbot, and wallhack. Safe, private, and updated daily. Buy keys now.</code></p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Heading Structure</h3>
+        <p>Use proper heading hierarchy:</p>
+        <ul>
+          <li><strong>H1</strong> — one per page, contains primary keyword</li>
+          <li><strong>H2</strong> — section headings with secondary keywords</li>
+          <li><strong>H3</strong> — subsections</li>
+        </ul>
+        <p>Never skip levels (H1 → H3 without H2).</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Internal Linking</h3>
+        <p>Every blog post should link to:</p>
+        <ul>
+          <li>The homepage</li>
+          <li>At least one product page</li>
+          <li>1–2 other blog posts</li>
+        </ul>
+        <p>Use descriptive anchor text: "our valorant esp cheat" not "click here".</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Image Optimization</h3>
+        <p>Every image must have:</p>
+        <ul>
+          <li>Descriptive alt text with keywords</li>
+          <li>Compressed file size (use WebP when possible)</li>
+          <li>Descriptive filename (valorant-esp-screenshot.webp, not IMG_001.png)</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>6. URL Structure</h3>
+        <p>Clean, keyword-rich URLs:</p>
+        <ul>
+          <li>✓ /valorant-esp-cheats</li>
+          <li>✓ /blog/best-fortnite-hacks-2026</li>
+          <li>✗ /page?id=12345</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>7. Content Depth</h3>
+        <p>Minimum content lengths:</p>
+        <ul>
+          <li>Homepage: 800+ words</li>
+          <li>Product pages: 500+ words</li>
+          <li>Blog posts: 1000+ words</li>
+        </ul>
+        <p>More depth = more keywords = more ranking opportunities.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>8. Schema Markup (Advanced)</h3>
+        <p>Add structured data where possible:</p>
+        <ul>
+          <li>FAQ schema on FAQ sections</li>
+          <li>Article schema on blog posts</li>
+          <li>Product schema on product pages</li>
+        </ul>
+        <p>Ask Cursor Pro to generate JSON-LD schema for each page type.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 9: When to Abandon -->
+    <section class="section hidden" data-title="When to Abandon a Domain" id="section-9">
+      <h2 class="section-title">When to Abandon a Domain</h2>
+      <div class="content-block">
+        <p class="intro">Not every domain will rank. Knowing when to cut losses saves time and budget. This is a critical skill.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. No Indexing After 6 Weeks</h3>
+        <p>If Google Search Console shows zero indexed pages after 6 weeks despite:</p>
+        <ul>
+          <li>Correct sitemap submission</li>
+          <li>DNS verification done</li>
+          <li>Manual indexing requests sent</li>
+          <li>No robots.txt blocks</li>
+        </ul>
+        <p>The domain may have a penalty or history issue. Report to manager.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Wrong Keyword Choice</h3>
+        <p>If you realize the keyword has:</p>
+        <ul>
+          <li>Zero search volume</li>
+          <li>Impossible competition (all major sites)</li>
+          <li>No buying intent</li>
+        </ul>
+        <p>Don't keep investing content into a dead keyword. Move on.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Manual Action in GSC</h3>
+        <p>If Google Search Console shows a "Manual Action" penalty:</p>
+        <p>Report immediately to manager. The domain may need to be retired or reconsidered.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. When NOT to Abandon</h3>
+        <p>Do not abandon a domain because:</p>
+        <ul>
+          <li>It's been only 1–2 weeks (too early)</li>
+          <li>You're lazy to add more content</li>
+          <li>Rankings are on page 2–3 (keep optimizing)</li>
+          <li>One page indexed but not all (fix sitemap/links)</li>
+        </ul>
+        <p>SEO requires patience. Don't abandon winners too early.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. The 80/20 Rule</h3>
+        <p>80% of your traffic will come from 20% of your sites.</p>
+        <p>Focus energy on sites showing early indexing signals. Let weak domains run on autopilot with minimal maintenance.</p>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Note</h3>
+        <p>I didn't grow by saving every domain. I grew by knowing which ones deserved more investment.</p>
+        <p>Cut the dead weight. Double down on what's working.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 10: Cloudflare & DNS -->
+    <section class="section hidden" data-title="Cloudflare & DNS Mastery" id="section-10">
+      <h2 class="section-title">Cloudflare & DNS Mastery</h2>
+      <div class="content-block">
+        <p class="intro">Cloudflare is our entire infrastructure — domain registrar, DNS, hosting, and SSL. You must be comfortable with every part of it.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Cloudflare Registrar — Buying Domains</h3>
+        <p>Dashboard → Domain Registration → Register Domains → search → purchase.</p>
+        <p>Domains are priced at wholesale cost. Auto-renewal should be ON.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Cloudflare Pages — Deployment</h3>
+        <p>Dashboard → Workers & Pages → Create application → Pages → Connect to Git.</p>
+        <p>Settings for most static sites:</p>
+        <ul>
+          <li>Production branch: <code>main</code></li>
+          <li>Build command: (leave empty for static HTML, or <code>npm run build</code> for frameworks)</li>
+          <li>Build output directory: <code>/</code> or <code>dist</code></li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Connecting Custom Domain</h3>
+        <p>Pages project → Custom domains → Set up a custom domain → enter your domain.</p>
+        <p>Since the domain is on Cloudflare, DNS records are added automatically.</p>
+        <p>Wait for SSL certificate (Status: Active).</p>
+      </div>
+
+      <div class="content-block">
+        <h3>4. DNS Records You Should Know</h3>
+        <div class="demo-box">
+          <p><span class="label">A Record:</span> Points domain to IP (auto-managed by Pages)</p>
+          <p><span class="label">CNAME:</span> Points subdomain to Pages URL (auto-managed)</p>
+          <p><span class="label">TXT Record:</span> Used for GSC verification and email</p>
+          <p><span class="label">NS Records:</span> Nameservers (Cloudflare handles this)</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>5. SSL/TLS Settings</h3>
+        <p>Cloudflare provides free SSL. Ensure:</p>
+        <ul>
+          <li>SSL/TLS encryption mode: Full (strict)</li>
+          <li>Always Use HTTPS: ON</li>
+          <li>Automatic HTTPS Rewrites: ON</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Common DNS Issues</h3>
+        <p><strong>Site not loading after deploy:</strong> Check DNS propagation (can take up to 24 hours, usually minutes on Cloudflare).</p>
+        <p><strong>SSL error:</strong> Ensure SSL mode is Full (strict) and certificate status is Active.</p>
+        <p><strong>Redirect loop:</strong> Check Page Rules and SSL settings.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>7. GitHub Integration</h3>
+        <p>Cloudflare Pages auto-deploys on every push to the connected branch.</p>
+        <p>Workflow: Edit in Cursor → Push to GitHub → Cloudflare auto-builds → Site updates live.</p>
+        <p>Check deployment logs if a build fails.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 11: Scaling Multiple Sites -->
+    <section class="section hidden" data-title="Scaling Multiple Sites" id="section-11">
+      <h2 class="section-title">Scaling Multiple Sites</h2>
+      <div class="content-block">
+        <p class="intro">At scale, SEO is no longer about building one site perfectly. It's about building many sites efficiently without burning out.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Daily Output Target</h3>
+        <p>Expected daily minimum:</p>
+        <ul>
+          <li>1 keyword research completed</li>
+          <li>1 domain purchased (or approved)</li>
+          <li>1 site built and deployed</li>
+          <li>GSC verification and sitemap submission done</li>
+        </ul>
+        <p>Consistency beats perfection.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. Template Strategy</h3>
+        <p>Create reusable templates in Cursor Pro for each game niche.</p>
+        <p>Same structure, different content:</p>
+        <ul>
+          <li>Homepage template → swap game name, images, keywords</li>
+          <li>Blog template → swap topics and keywords</li>
+          <li>Product page template → swap product details</li>
+        </ul>
+        <p>Templates speed up builds. Never copy content — only structure.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Batch Similar Tasks</h3>
+        <p>Don't context-switch between different games constantly.</p>
+        <p>Good workflow:</p>
+        <ol>
+          <li>Morning: keyword research for 3 domains</li>
+          <li>Midday: buy domains + start builds in Cursor</li>
+          <li>Afternoon: push to GitHub + deploy on Cloudflare</li>
+          <li>Evening: GSC setup + sitemap submission for all new sites</li>
+        </ol>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Track Everything in a Spreadsheet</h3>
+        <p>Maintain a master tracker with columns:</p>
+        <ul>
+          <li>Domain name</li>
+          <li>Primary keyword</li>
+          <li>Game</li>
+          <li>GitHub repo URL</li>
+          <li>Cloudflare Pages URL</li>
+          <li>GSC verified (yes/no)</li>
+          <li>Sitemap submitted (yes/no)</li>
+          <li>Pages indexed (count)</li>
+          <li>Date deployed</li>
+          <li>Status (building / live / ranking / abandoned)</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Avoid Burnout</h3>
+        <p>Signs you're burning out:</p>
+        <ul>
+          <li>Skipping GSC verification</li>
+          <li>Deploying without checking the live site</li>
+          <li>Recycling content across sites</li>
+          <li>Missing daily targets consistently</li>
+        </ul>
+        <p>If you feel overwhelmed, tell your manager. Quality drops before quantity does.</p>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Note</h3>
+        <p>I lost more rankings from rushing deployments than from bad keyword choices.</p>
+        <p>Speed matters, but accuracy matters more. Build fast, but build right.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 12: Google Search Console -->
+    <section class="section hidden" data-title="Google Search Console Guide" id="section-12">
+      <h2 class="section-title">Google Search Console Guide</h2>
+      <div class="content-block">
+        <p class="intro">Google Search Console (GSC) is how Google communicates with you. Every site must be verified and monitored through GSC. No exceptions.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>1. Adding a Property</h3>
+        <p>Go to <a href="https://search.google.com/search-console" style="color:#fff;">search.google.com/search-console</a></p>
+        <p>Click "Add property" → Choose "Domain" (not URL prefix).</p>
+        <p>Enter: <code>fortnitecheats.com</code> (without https://)</p>
+      </div>
+
+      <div class="content-block">
+        <h3>2. DNS Verification</h3>
+        <p>Google gives you a TXT record. Add it in Cloudflare:</p>
+        <div class="demo-box">
+          <p><span class="label">CLOUDFLARE DNS:</span> Add record</p>
+          <p><span class="label">Type:</span> TXT</p>
+          <p><span class="label">Name:</span> @ (or domain root)</p>
+          <p><span class="label">Content:</span> google-site-verification=xxxxxxxxxx</p>
+          <p><span class="label">TTL:</span> Auto</p>
+        </div>
+        <p>Return to GSC and click Verify. Propagation usually takes 1–5 minutes on Cloudflare.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>3. Submitting Sitemap</h3>
+        <p>GSC → Sitemaps → Add new sitemap → enter <code>sitemap.xml</code></p>
+        <p>Your sitemap should list all pages:</p>
+        <div class="demo-box">
+          <p>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</p>
+          <p>&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;</p>
+          <p>&nbsp;&nbsp;&lt;url&gt;&lt;loc&gt;https://fortnitecheats.com/&lt;/loc&gt;&lt;/url&gt;</p>
+          <p>&nbsp;&nbsp;&lt;url&gt;&lt;loc&gt;https://fortnitecheats.com/products&lt;/loc&gt;&lt;/url&gt;</p>
+          <p>&nbsp;&nbsp;&lt;url&gt;&lt;loc&gt;https://fortnitecheats.com/blog/post-1&lt;/loc&gt;&lt;/url&gt;</p>
+          <p>&lt;/urlset&gt;</p>
+        </div>
+      </div>
+
+      <div class="content-block">
+        <h3>4. Request Indexing</h3>
+        <p>After sitemap submission, manually request indexing for key pages:</p>
+        <p>GSC → URL Inspection → paste URL → "Request Indexing"</p>
+        <p>Do this for:</p>
+        <ul>
+          <li>Homepage</li>
+          <li>Main product page</li>
+          <li>Top 3 blog posts</li>
+        </ul>
+        <p>Google limits daily indexing requests. Prioritize your most important pages.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>5. Monitoring Indexing Status</h3>
+        <p>Check weekly:</p>
+        <ul>
+          <li><strong>Pages</strong> → How many pages are indexed</li>
+          <li><strong>Coverage</strong> → Any errors or warnings</li>
+          <li><strong>Performance</strong> → Impressions, clicks, average position</li>
+          <li><strong>Core Web Vitals</strong> → Page speed issues</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>6. Fixing Common GSC Issues</h3>
+        <p><strong>"Discovered — currently not indexed":</strong> Request indexing manually. Add more internal links to the page.</p>
+        <p><strong>"Crawled — currently not indexed":</strong> Content quality issue. Improve content depth and uniqueness.</p>
+        <p><strong>"Excluded by noindex tag":</strong> Remove noindex meta tag from the page.</p>
+        <p><strong>"Soft 404":</strong> Page has no real content. Add substantial content.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>7. Performance Tracking</h3>
+        <p>After 2–4 weeks, check Performance tab:</p>
+        <ul>
+          <li>Which keywords are getting impressions</li>
+          <li>Which pages are getting clicks</li>
+          <li>Average position for target keywords</li>
+        </ul>
+        <p>Use this data to decide which sites deserve more content investment.</p>
+      </div>
+
+      <div class="author-final">
+        <h3>Author Note</h3>
+        <p>GSC is not optional. It is your direct line to Google.</p>
+        <p>Every site I rank, I monitor weekly. The data tells you exactly what to fix.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 13: Roadmap -->
+    <section class="section hidden" data-title="Roadmap: First Site to Portfolio" id="section-13">
+      <h2 class="section-title">Roadmap: First Site to Portfolio</h2>
+      <div class="content-block">
+        <p class="intro">This roadmap shows how you grow from your first site to managing a full portfolio. No shortcuts. Follow each stage before moving to the next.</p>
+      </div>
+
+      <div class="stage-card">
+        <p class="stage-label">Stage 1</p>
+        <h3>First Site Deployed</h3>
+        <h4>What This Stage Is About</h4>
+        <ul>
+          <li>Learning the full workflow end-to-end</li>
+          <li>Not skipping any steps</li>
+          <li>Building clean habits</li>
+        </ul>
+        <h4>What You Focus On</h4>
+        <ul>
+          <li>One keyword, one domain, one site</li>
+          <li>Complete GSC verification</li>
+          <li>Submit sitemap and request indexing</li>
+          <li>Verify the live site works on mobile</li>
+        </ul>
+        <h4>Common Mistakes Here</h4>
+        <ul>
+          <li>Rushing deployment without checking live site</li>
+          <li>Forgetting sitemap submission</li>
+          <li>Skipping meta tags</li>
+        </ul>
+        <h4>What Stage 1 Means</h4>
+        <p>You proved you can follow the complete pipeline without help.</p>
+      </div>
+
+      <div class="stage-card">
+        <p class="stage-label">Stage 2</p>
+        <h3>5 Sites Live & Indexed</h3>
+        <h4>What Changes</h4>
+        <ul>
+          <li>You're faster at building</li>
+          <li>You recognize good vs bad keywords quicker</li>
+          <li>You have templates ready in Cursor</li>
+        </ul>
+        <h4>What You Focus On</h4>
+        <ul>
+          <li>Daily deployment rhythm</li>
+          <li>Unique content on every site</li>
+          <li>Tracking spreadsheet maintained</li>
+          <li>Monitoring GSC for all sites weekly</li>
+        </ul>
+        <h4>Key Rule</h4>
+        <p>At this stage, quality control matters more than speed.</p>
+      </div>
+
+      <div class="stage-card">
+        <p class="stage-label">Stage 3</p>
+        <h3>First Rankings on Page 1</h3>
+        <h4>What This Stage Is</h4>
+        <p>This is where SEO employees separate from beginners.</p>
+        <p>You now:</p>
+        <ul>
+          <li>See which sites are getting impressions</li>
+          <li>Know which keywords actually convert</li>
+          <li>Double down on winning sites with more content</li>
+        </ul>
+        <h4>What You Focus On</h4>
+        <ul>
+          <li>Adding blog posts to ranking sites</li>
+          <li>Internal linking optimization</li>
+          <li>Abandoning dead domains quickly</li>
+          <li>Replicating success patterns</li>
+        </ul>
+      </div>
+
+      <div class="stage-card">
+        <p class="stage-label">Stage 4</p>
+        <h3>Full Portfolio (20+ Sites)</h3>
+        <h4>What Changes</h4>
+        <ul>
+          <li>You manage sites in batches</li>
+          <li>Managers trust you with premium domains</li>
+          <li>You mentor new hires on the workflow</li>
+        </ul>
+        <h4>What You Focus On</h4>
+        <ul>
+          <li>Scaling content on top performers</li>
+          <li>Efficient daily pipeline</li>
+          <li>Data-driven keyword selection</li>
+          <li>Portfolio-wide GSC monitoring</li>
+        </ul>
+        <h4>Why This Feels Easier</h4>
+        <ul>
+          <li>Templates are dialed in</li>
+          <li>You know what works before buying the domain</li>
+          <li>Passive traffic compounds across sites</li>
+        </ul>
+      </div>
+
+      <div class="content-block">
+        <h3>What Stops People From Scaling</h3>
+        <p>Not lack of skill. But:</p>
+        <ul>
+          <li>Skipping GSC verification</li>
+          <li>Recycling content across sites</li>
+          <li>Not tracking site performance</li>
+          <li>Abandoning sites too early or too late</li>
+          <li>Ignoring manager feedback</li>
+        </ul>
+        <p>The system doesn't fail people. People stop following it.</p>
+      </div>
+
+      <div class="content-block">
+        <h3>Final Roadmap Rule</h3>
+        <p>Growth happens in this order:</p>
+        <ol>
+          <li>Learn the workflow</li>
+          <li>Deploy consistently</li>
+          <li>Monitor and optimize</li>
+          <li>Scale the portfolio</li>
+        </ol>
+        <p>If you skip a step, you fall back later.</p>
+      </div>
+
+      <div class="end-section">
+        <p class="emoji">🎯</p>
+        <h3>You've Reached the End</h3>
+        <p>You now have everything you need to succeed in the SEO department.<br />The rest is execution.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const sections = [
+      'Foundation: What We Sell',
+      'The Complete Workflow',
+      'Keyword Research That Converts',
+      'Common SEO Mistakes',
+      'Manager Authority',
+      'The Market & Competition',
+      'Domain Selection Strategy',
+      'On-Page SEO Essentials',
+      'When to Abandon a Domain',
+      'Cloudflare & DNS Mastery',
+      'Scaling Multiple Sites',
+      'Google Search Console Guide',
+      'Roadmap: First Site to Portfolio'
+    ];
+    const nav = document.getElementById('nav-list');
+    sections.forEach((title, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'nav-btn' + (i === 0 ? ' nav-active' : '');
+      btn.dataset.section = i;
+      btn.innerHTML = `
+        <div class="nav-btn-inner">
+          <div class="nav-num ${i === 0 ? 'nav-num-active' : 'nav-num-inactive'}">${i + 1}</div>
+          <div>
+            <div class="nav-title ${i === 0 ? 'text-white' : 'text-zinc-600'}">${title}</div>
+            <div class="nav-page">Page ${i + 1} of ${sections.length}</div>
+          </div>
+        </div>`;
+      nav.appendChild(btn);
+    });
+  </script>
+  <script src="js/app.js"></script>
+</body>
+</html>
