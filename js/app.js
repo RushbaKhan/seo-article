@@ -36,7 +36,7 @@
       section.classList.toggle('hidden', index !== currentSection);
     });
 
-    document.title = `${sections[currentSection].dataset.title} - SEO Training Manual - NOVAXWARE`;
+    document.title = `${sections[currentSection].dataset.title} - SEO Training Manual - ZADEYO`;
     history.replaceState(null, '', `#section-${currentSection + 1}`);
   }
 

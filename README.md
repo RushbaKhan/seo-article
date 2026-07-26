@@ -1,6 +1,6 @@
-# SEO Training Manual - NOVAXWARE
+# SEO Training Manual - ZADEYO
 
-Static training article for the NOVAXWARE SEO department. Matches the format and structure of the [Lead Generation Training Manual](https://novaxtool.com/leadgen).
+Static training article for the ZADEYO SEO department. Matches the format and structure of the [Lead Generation Training Manual](https://novaxtool.com/leadgen).
 
 ## Contents
 
