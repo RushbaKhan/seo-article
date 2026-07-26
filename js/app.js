@@ -34,6 +34,10 @@
 
     sections.forEach((section, index) => {
       section.classList.toggle('hidden', index !== currentSection);
+      const meta = section.querySelector('.section-meta');
+      if (meta) {
+        meta.textContent = `PAGE ${index + 1} OF ${totalSections}`;
+      }
     });
 
     document.title = `${sections[currentSection].dataset.title} - SEO Training Manual - ZADEYO`;
@@ -109,6 +113,19 @@
     const idx = parseInt(hash[1], 10) - 1;
     if (idx >= 0 && idx < totalSections) currentSection = idx;
   }
+
+  sections.forEach((section, index) => {
+    const title = section.querySelector('.section-title');
+    if (title) {
+      title.textContent = title.textContent.replace(': ', ' — ');
+      if (!section.querySelector('.section-meta')) {
+        const meta = document.createElement('p');
+        meta.className = 'section-meta';
+        meta.textContent = `PAGE ${index + 1} OF ${totalSections}`;
+        section.insertBefore(meta, title);
+      }
+    }
+  });
 
   if (isDesktop()) openNav();
   else closeNav();
