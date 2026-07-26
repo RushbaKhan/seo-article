@@ -10,18 +10,20 @@
 </head>
 <body class="min-h-screen bg-black relative">
 
-  <button id="nav-toggle" class="btn-nav-toggle fixed top-4 left-4 sm:top-6 sm:left-6 z-50">Show Navigation</button>
-  <button id="back-btn" class="btn-back fixed top-4 right-4 sm:top-6 sm:right-6 z-50">← Back</button>
+  <div id="sidebar-overlay" aria-hidden="true"></div>
+
+  <button id="nav-toggle" class="btn-nav-toggle" type="button">Show Navigation</button>
+  <button id="back-btn" class="btn-back" type="button">← Back</button>
 
   <aside id="sidebar">
-    <div class="sidebar-header" style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1.5rem;">
+    <div class="sidebar-header">
       <div>
         <h1>NOVAXWARE</h1>
         <p>SEO Training</p>
       </div>
-      <button id="nav-close" class="close-nav-btn lg:hidden">✕</button>
+      <button id="nav-close" class="close-nav-btn" type="button" aria-label="Close navigation">✕</button>
     </div>
-    <nav id="nav-list"></nav>
+    <nav id="nav-list" aria-label="Training sections"></nav>
   </aside>
 
   <main class="main-content" id="main">
@@ -1112,7 +1114,7 @@
       btn.innerHTML = `
         <div class="nav-btn-inner">
           <div class="nav-num ${i === 0 ? 'nav-num-active' : 'nav-num-inactive'}">${i + 1}</div>
-          <div>
+          <div class="nav-text">
             <div class="nav-title ${i === 0 ? 'text-white' : 'text-zinc-600'}">${title}</div>
             <div class="nav-page">Page ${i + 1} of ${sections.length}</div>
           </div>

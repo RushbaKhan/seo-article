@@ -2,19 +2,24 @@
   const sections = document.querySelectorAll('.section');
   const navButtons = document.querySelectorAll('[data-section]');
   const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
   const navToggle = document.getElementById('nav-toggle');
   const navClose = document.getElementById('nav-close');
   const backBtn = document.getElementById('back-btn');
   const totalSections = sections.length;
+  const desktopQuery = window.matchMedia('(min-width: 1024px)');
 
   let currentSection = 0;
   let navOpen = false;
+
+  function isDesktop() {
+    return desktopQuery.matches;
+  }
 
   function updatePageIndicator() {
     navButtons.forEach((btn, index) => {
       const isActive = index === currentSection;
       btn.classList.toggle('nav-active', isActive);
-      btn.classList.toggle('nav-inactive', !isActive);
       const num = btn.querySelector('.nav-num');
       if (num) {
         num.classList.toggle('nav-num-active', isActive);
@@ -40,23 +45,26 @@
     currentSection = index;
     updatePageIndicator();
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (window.innerWidth < 1024) {
-      closeNav();
+    if (!isDesktop()) closeNav();
+  }
+
+  function setNavState(open) {
+    navOpen = open;
+    sidebar.classList.toggle('open', open);
+    if (overlay) {
+      overlay.classList.toggle('visible', open && !isDesktop());
+      overlay.setAttribute('aria-hidden', open && !isDesktop() ? 'false' : 'true');
     }
+    navToggle.textContent = open ? 'Hide Navigation' : 'Show Navigation';
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
 
   function openNav() {
-    navOpen = true;
-    sidebar.classList.remove('-translate-x-full');
-    sidebar.classList.add('translate-x-0');
-    navToggle.textContent = 'Hide Navigation';
+    setNavState(true);
   }
 
   function closeNav() {
-    navOpen = false;
-    sidebar.classList.add('-translate-x-full');
-    sidebar.classList.remove('translate-x-0');
-    navToggle.textContent = 'Show Navigation';
+    setNavState(false);
   }
 
   function toggleNav() {
@@ -72,6 +80,7 @@
 
   navToggle.addEventListener('click', toggleNav);
   if (navClose) navClose.addEventListener('click', closeNav);
+  if (overlay) overlay.addEventListener('click', closeNav);
 
   backBtn.addEventListener('click', () => {
     if (currentSection > 0) goToSection(currentSection - 1);
@@ -86,12 +95,22 @@
     });
   });
 
+  desktopQuery.addEventListener('change', () => {
+    if (isDesktop()) {
+      openNav();
+      if (overlay) overlay.classList.remove('visible');
+    } else if (!navOpen) {
+      closeNav();
+    }
+  });
+
   const hash = window.location.hash.match(/section-(\d+)/);
   if (hash) {
     const idx = parseInt(hash[1], 10) - 1;
     if (idx >= 0 && idx < totalSections) currentSection = idx;
   }
 
-  if (window.innerWidth >= 1024) openNav();
+  if (isDesktop()) openNav();
+  else closeNav();
   updatePageIndicator();
 })();
