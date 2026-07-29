@@ -1,182 +1,121 @@
-# SEO Department — Official Rules & Announcement
+# SEO Department — Official Rules
 
-**@SEO Team**
+Every employee must complete **1 fully finished website every week.**
 
-Please read all rules carefully and follow them. Failure to comply will result in strict action — no warnings, no excuses.
+────────────────────────
 
----
+## Website Standards
 
-## Daily Work Requirements
+Every website must have:
 
-**Every working day you must:**
+- Unique content (No copy-paste)
+- Title tags & meta descriptions
+- sitemap.xml & robots.txt
+- Mobile responsive design
+- Internal linking
+- Game-specific branding & images
+- Optimized image alt text
+- Perfect SEO (80 or 80+) - must be checked on SEOBILITY
 
-- Complete **6 hours in VC** (mandatory)
-- Do at least **1 keyword research** and document it (search volume, competition, content plan)
-- Submit **end-of-day report** to manager before end of shift
-- Check **Google Search Console** on all your live sites
-- Fix any **rejected or failed sites the same day**
-
----
-
-## Weekly Target (Main Deliverable)
-
-**Every week you must complete:**
-
-- **1 domain purchased** on Cloudflare (with manager approval if needed)
-- **1 full website built** on Cursor AI Pro
-- **GitHub push** to the correct assigned repo
-- **Cloudflare deployment** with domain connected and SSL active
-- **Google Search Console** — domain verified and sitemap submitted
-- **Indexing requested** for homepage and key pages
-
-**1 domain + 1 complete site per week** is the minimum. Half-done work does not count.
-
----
-
-## Every Site Must Include
-
-- Unique content — **no copy-paste across domains**
-- Title tags and meta descriptions on every page
-- `sitemap.xml` and `robots.txt`
-- Mobile-responsive layout
-- Internal links and blog/content depth
-- Game-specific branding, images, and metadata
-- **No AI copy-paste content across multiple sites**
-
----
+────────────────────────
 
 ## Voice Channel (VC) Rules
 
-- **6 hours daily in VC** — strictly enforced
-- **Must remain active** during VC time
-- **Sitting AFK on VC is not allowed**
-- If you have work (building site, deployment, keyword research) → **leave VC, finish work, rejoin**
-- Must complete full required VC time every day
+- 6 hours in VC every working day (Mandatory)
+- All work must be completed while in VC
+- Website building, keyword research, deployments, GitHub work, SEO tasks, and all assigned work must be done during VC
+- No AFK or idle time in VC
+- Complete your full VC requirement every day
 
----
+────────────────────────
 
-## Quality Check Before Marking Site Complete
+## Before Marking a Website Complete
 
-Review your site multiple times before marking it done:
+Make sure:
 
-- Live site loads on mobile and desktop
-- SSL active (HTTPS working)
-- All pages have title tags and meta descriptions
-- `sitemap.xml` exists and submitted to GSC
-- Google Search Console verified
-- Content is unique (not copied from another site)
-- Images have alt text and are optimized
-- Internal links working — no broken links
+- Website works on desktop & mobile
+- SSL (HTTPS) is active
+- Google Search Console is verified
+- Sitemap submitted
+- Internal links working
+- Unique content
+- No deployment or SEO issues
 
----
+────────────────────────
 
-## Rejected / Failed Sites Policy
+## Rejected / Failed Websites
 
-- All rejected or failed sites must be **fixed and resubmitted the same day**
-- Includes: broken deploy, missing GSC, no sitemap, SSL issues, duplicate content, manager-flagged problems
-- Do not leave broken or incomplete sites overnight
+- All rejected or failed websites must be fixed and resubmitted the same day
+- Do not leave broken or incomplete websites overnight
 
----
+────────────────────────
 
 ## Leave Policy
 
-- **No paid leaves**
-- **Only unpaid leaves allowed**
-- **Maximum 3 unpaid leaves per month**
-- Must inform **RUSHBA-BW-OS before start of day**
-- Valid reason required for every leave
+- No paid leaves
+- Maximum 3 unpaid leaves per month
+- After 3 leaves, every additional leave = 3 days salary cut
+- Inform me before the start of the day
+- A valid reason is required
 
----
-
-## VC Absence / Can't Complete Work
-
-If you can't finish VC time or weekly work:
-
-- Inform **RUSHBA-BW-OS only**
-- Must inform **before start of day**
-- Do not inform other team members instead of manager
-
----
+────────────────────────
 
 ## Device Policy
 
-- **No mobile phones for work**
-- **No sitting in VC from mobile**
-- Work only on **PC/Laptop**
+- Work only on a PC/Laptop
+- No working or joining VC from mobile
 
----
+────────────────────────
 
-## Communication Policy
+## Communication
 
-- **No direct communication with upper management**
-- All issues go to **RUSHBA-BW-OS only**
+- Report all work-related issues to me only
+- Do not contact upper management directly
 
----
+────────────────────────
 
-## Meetings & Workshops
+## Meetings
 
-- **Compulsory attendance** in all meetings/workshops
-- Must be **on time**
-- Can't attend → inform **RUSHBA-BW-OS beforehand**
+- Attendance is mandatory
+- Be on time
+- If you cannot attend, inform me beforehand
 
----
+────────────────────────
 
-## Team Collaboration
+## Team Rules
 
-- **Help each other at all times**
-- **No gatekeeping** knowledge, templates, or workflows
-- Don't interfere with another employee's domains, repos, or sites
-- No jokes or confusing other employees in VC
+- Help each other
+- No gatekeeping of knowledge, templates, or workflows
+- Do not interfere with another employee's domains, repositories, or websites
+- No unnecessary distractions or trolling in VC
 
----
+────────────────────────
 
-## Domain & Budget Rules
+## Domain Rules
 
-- **No domain purchase without keyword research first**
-- **All domains on Cloudflare only**
-- **One domain = one site = one GitHub repo = one Cloudflare project**
-- Don't waste domains on bad keywords
-- Don't abandon sites without manager approval
-- Completed sites are **company property** — manager holds final access at all times
+- Complete keyword research before purchasing any domain
+- All domains must be purchased through Cloudflare
+- One Domain = One Website = One GitHub Repository = One Cloudflare Project
+- Do not waste or abandon domains
 
----
+────────────────────────
 
-## Site Ownership & Access
+## Ownership & Access
 
-- Once a site is **fully completed and deployed**, all access and ownership stays with **ZADEYO / manager**
-- Sites built during employment belong to the company — **not to you personally**
-- You **cannot delete, transfer, or take down** any site from your side
-- You **cannot remove** domains, GitHub repos, or Cloudflare projects without manager approval
-- On **resigning, termination, or leaving** — you must hand over all login details, repos, domains, and GSC access to manager
-- Do not share repo access, Cloudflare login, or domain control with anyone outside the team
+- All websites, domains, repositories, Cloudflare projects, and Google Search Console properties belong to ZADEYO
+- Do not delete the sites or domains under any circumstances
+- Never share department information with anyone outside the team
+- CURSOR PRO should only be used for company SEO work wisely - regular checkups will be done by me
 
----
+────────────────────────
 
-## When Is a Site "Done"?
+## A Website Is Complete Only When
 
-A site is complete **only when ALL of these are done:**
-
-- Keyword research documented
-- Domain purchased on Cloudflare
-- Website built on Cursor AI Pro with unique content
-- Code pushed to correct GitHub repo
-- Deployed on Cloudflare Pages
-- Custom domain connected + SSL active
-- Google Search Console verified
-- Sitemap submitted
-- Indexing requested for key pages
-- Added to tracking sheet
-- Included in daily report
-- Access handed to manager — site remains under company control
-
-**Missing even one step = site not counted as complete**
-
----
-
-**Take this seriously from now on.**
-
-There will be **no leniency** and **no warnings** — actions will be taken immediately.
-
-Stay disciplined. Stay consistent.
-
-**— RUSHBA-BW-OS**
+- ✓ Keyword research completed
+- ✓ Domain purchased
+- ✓ Website built with unique content
+- ✓ GitHub updated
+- ✓ Deployed on Cloudflare Pages
+- ✓ Google Search Console verified
+- ✓ Sitemap submitted
+- ✓ Indexing requested
