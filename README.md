@@ -2,6 +2,12 @@
 
 Static training article for the ZADEYO SEO department. Matches the format and structure of the [Lead Generation Training Manual](https://novaxtool.com/leadgen).
 
+## Pages
+
+- **Training Manual:** `index.html`
+- **Department Rules:** `rules.html` (official formatted rules document)
+- **Rules (Markdown):** `SEO-DEPARTMENT-RULES.md`
+
 ## Contents
 
 13-section training manual covering:
