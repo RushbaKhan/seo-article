@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>SEO Dashboard — GSC Status</title>
+  <link rel="stylesheet" href="css/mockup.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><h1>ZADEYO SEO</h1><p>Employee Portal</p></div>
+      <div class="nav-section">Menu</div>
+      <a class="nav-link" href="#"><span class="icon">⌂</span> Dashboard</a>
+      <a class="nav-link" href="#"><span class="icon">🌐</span> My Websites</a>
+      <a class="nav-link" href="#"><span class="icon">☑</span> Daily Log</a>
+      <a class="nav-link" href="#"><span class="icon">📅</span> Weekly Targets</a>
+      <a class="nav-link" href="#"><span class="icon">⌨</span> Cursor Usage</a>
+      <a class="nav-link active" href="#"><span class="icon">📈</span> GSC Status</a>
+      <a class="nav-link" href="#"><span class="icon">📝</span> Reports</a>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <h2>Google Search Console</h2>
+        <div class="topbar-meta"><button class="btn">Refresh All</button></div>
+      </header>
+      <div class="content">
+        <span class="mockup-label">Screen 6 — GSC monitoring</span>
+        <div class="stats-grid" style="grid-template-columns: repeat(4, 1fr);">
+          <div class="stat-card green"><div class="label">Verified</div><div class="value">10</div></div>
+          <div class="stat-card amber"><div class="label">Pending</div><div class="value">1</div></div>
+          <div class="stat-card"><div class="label">Sitemaps Submitted</div><div class="value">9</div></div>
+          <div class="stat-card red"><div class="label">Issues</div><div class="value">2</div></div>
+        </div>
+        <div class="panel">
+          <div class="panel-body" style="padding:0;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Domain</th>
+                  <th>GSC Verified</th>
+                  <th>Sitemap</th>
+                  <th>Pages Indexed</th>
+                  <th>Last Checked</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>marathonhacks.net</td>
+                  <td>✓ Yes</td>
+                  <td>✓ Submitted</td>
+                  <td>4 / 6</td>
+                  <td>Today</td>
+                  <td><span class="badge progress">Indexing</span></td>
+                  <td><button class="btn">Open GSC</button></td>
+                </tr>
+                <tr>
+                  <td>fortnitecheats.net</td>
+                  <td>✓ Yes</td>
+                  <td>✓ Submitted</td>
+                  <td>12 / 12</td>
+                  <td>Today</td>
+                  <td><span class="badge done">Healthy</span></td>
+                  <td><button class="btn">Open GSC</button></td>
+                </tr>
+                <tr>
+                  <td>arcraiderscheat.com</td>
+                  <td>✓ Yes</td>
+                  <td>✓ Submitted</td>
+                  <td>0 / 5</td>
+                  <td>Yesterday</td>
+                  <td><span class="badge progress">New</span></td>
+                  <td><button class="btn">Open GSC</button></td>
+                </tr>
+                <tr>
+                  <td>valorantesp.net</td>
+                  <td>✓ Yes</td>
+                  <td>✗ Missing</td>
+                  <td>2 / 8</td>
+                  <td>2 days ago</td>
+                  <td><span class="badge fail">Fix Required</span></td>
+                  <td><button class="btn primary">Fix</button></td>
+                </tr>
+                <tr>
+                  <td>newdomain.com</td>
+                  <td>— Pending</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td><span class="badge pending">Not Live</span></td>
+                  <td><button class="btn">Setup</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="note">Daily task: check GSC for all live sites. Flag sitemap missing, indexing errors, or coverage issues. Manager sees team-wide GSC health.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

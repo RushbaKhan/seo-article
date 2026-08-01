@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "Static training article for the ZADEYO SEO department. Matches the format and structure of the [Lead Generation Training Manual](https://novaxtool.com/leadgen).",
+  "main": "capture-rules.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rushbakhan/seo-article.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rushbakhan/seo-article/issues"
+  },
+  "homepage": "https://github.com/rushbakhan/seo-article#readme",
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

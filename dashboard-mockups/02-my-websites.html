@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>SEO Dashboard — My Websites</title>
+  <link rel="stylesheet" href="css/mockup.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><h1>ZADEYO SEO</h1><p>Employee Portal</p></div>
+      <div class="nav-section">Menu</div>
+      <a class="nav-link" href="#"><span class="icon">⌂</span> Dashboard</a>
+      <a class="nav-link active" href="#"><span class="icon">🌐</span> My Websites</a>
+      <a class="nav-link" href="#"><span class="icon">☑</span> Daily Log</a>
+      <a class="nav-link" href="#"><span class="icon">📅</span> Weekly Targets</a>
+      <a class="nav-link" href="#"><span class="icon">⌨</span> Cursor Usage</a>
+      <a class="nav-link" href="#"><span class="icon">📈</span> GSC Status</a>
+      <a class="nav-link" href="#"><span class="icon">📝</span> Reports</a>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <h2>My Websites</h2>
+        <div class="topbar-meta"><button class="btn primary">+ Add Website</button></div>
+      </header>
+      <div class="content">
+        <span class="mockup-label">Screen 2 — Websites list (like /posts page)</span>
+        <div class="filters">
+          <span class="filter active">All (12)</span>
+          <span class="filter">This Week (1)</span>
+          <span class="filter">Live (8)</span>
+          <span class="filter">In Progress (2)</span>
+          <span class="filter">Rejected (1)</span>
+          <input class="search" placeholder="Search domain or game..." readonly>
+        </div>
+        <div class="panel">
+          <div class="panel-body" style="padding:0;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Domain</th>
+                  <th>Game</th>
+                  <th>Week</th>
+                  <th>Status</th>
+                  <th>GSC</th>
+                  <th>Sitemap</th>
+                  <th>SEO Score</th>
+                  <th>GitHub</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>marathonhacks.net</strong></td>
+                  <td>Marathon</td>
+                  <td>W31</td>
+                  <td><span class="badge done">Approved</span></td>
+                  <td>✓ Verified</td>
+                  <td>✓ Submitted</td>
+                  <td>84</td>
+                  <td>↗ repo</td>
+                  <td><button class="btn">View</button></td>
+                </tr>
+                <tr>
+                  <td><strong>arcraiderscheat.com</strong></td>
+                  <td>Arc Raiders</td>
+                  <td>W31</td>
+                  <td><span class="badge progress">In Review</span></td>
+                  <td>✓ Verified</td>
+                  <td>✓ Submitted</td>
+                  <td>81</td>
+                  <td>↗ repo</td>
+                  <td><button class="btn">Edit</button></td>
+                </tr>
+                <tr>
+                  <td><strong>valorantesp.net</strong></td>
+                  <td>Valorant</td>
+                  <td>W30</td>
+                  <td><span class="badge fail">Rejected</span></td>
+                  <td>✓ Verified</td>
+                  <td>✗ Missing</td>
+                  <td>62</td>
+                  <td>↗ repo</td>
+                  <td><button class="btn primary">Fix</button></td>
+                </tr>
+                <tr>
+                  <td><strong>fortnitecheats.net</strong></td>
+                  <td>Fortnite</td>
+                  <td>W30</td>
+                  <td><span class="badge done">Approved</span></td>
+                  <td>✓ Verified</td>
+                  <td>✓ Submitted</td>
+                  <td>88</td>
+                  <td>↗ repo</td>
+                  <td><button class="btn">View</button></td>
+                </tr>
+                <tr>
+                  <td><strong>newdomain.com</strong></td>
+                  <td>—</td>
+                  <td>W31</td>
+                  <td><span class="badge pending">Draft</span></td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td>—</td>
+                  <td><button class="btn">Continue</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="note">Add website form fields: domain, game name, target keywords, GitHub repo URL, Cloudflare project URL, GSC property link, deploy date, SEO score screenshot upload, completion checklist.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

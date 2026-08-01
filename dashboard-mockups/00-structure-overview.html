@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1440">
+  <title>SEO Dashboard — Structure Overview</title>
+  <link rel="stylesheet" href="css/mockup.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>ZADEYO SEO</h1>
+        <p>Department Dashboard · Mockup</p>
+      </div>
+      <div class="nav-section">Employee</div>
+      <a class="nav-link active" href="#"><span class="icon">▣</span> Structure Map</a>
+      <a class="nav-link" href="#"><span class="icon">⌂</span> Dashboard</a>
+      <a class="nav-link" href="#"><span class="icon">🌐</span> My Websites</a>
+      <a class="nav-link" href="#"><span class="icon">☑</span> Daily Log</a>
+      <a class="nav-link" href="#"><span class="icon">📅</span> Weekly Targets</a>
+      <a class="nav-link" href="#"><span class="icon">⌨</span> Cursor Usage</a>
+      <a class="nav-link" href="#"><span class="icon">📈</span> GSC Status</a>
+      <a class="nav-link" href="#"><span class="icon">📝</span> Reports</a>
+      <div class="nav-section">Manager</div>
+      <a class="nav-link" href="#"><span class="icon">👥</span> Team Overview</a>
+      <a class="nav-link" href="#"><span class="icon">📋</span> Rules & Policy</a>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <h2>Dashboard Structure Overview</h2>
+        <div class="topbar-meta">
+          <span class="pill">Reference for developer</span>
+          <span>Similar to novaxbwms.netlify.app/posts</span>
+        </div>
+      </header>
+      <div class="content">
+        <span class="mockup-label">Screen 0 — Full app map</span>
+
+        <div class="overview-grid" style="margin-bottom: 1.5rem;">
+          <div class="overview-card">
+            <h3>1. Dashboard Home</h3>
+            <ul>
+              <li>Today's stats at a glance</li>
+              <li>VC hours tracker (6hr target)</li>
+              <li>Weekly website progress (0/2)</li>
+              <li>Cursor usage summary</li>
+              <li>Today's checklist shortcut</li>
+              <li>Recent submissions</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>2. My Websites (Posts)</h3>
+            <ul>
+              <li>All domains / websites table</li>
+              <li>Status: draft / live / rejected</li>
+              <li>Game, GitHub repo, Cloudflare link</li>
+              <li>GSC verified, sitemap, SEO score</li>
+              <li>Add new website button</li>
+              <li>Filter by week / status</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>3. Daily Log</h3>
+            <ul>
+              <li>Date + employee auto-fill</li>
+              <li>VC join / leave times</li>
+              <li>Total VC hours today</li>
+              <li>Tasks done checklist</li>
+              <li>Keyword research log</li>
+              <li>End-of-day report submit</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>4. Weekly Targets</h3>
+            <ul>
+              <li>Target: 2 websites / week</li>
+              <li>Progress bar per employee</li>
+              <li>Website 1 + Website 2 slots</li>
+              <li>Completion checklist per site</li>
+              <li>Deadline countdown (Friday)</li>
+              <li>Rejected site resubmit flag</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>5. Cursor Pro Usage</h3>
+            <ul>
+              <li>Daily / weekly request count</li>
+              <li>Projects worked on list</li>
+              <li>Domain linked to each session</li>
+              <li>Manager review notes</li>
+              <li>Usage warnings if over limit</li>
+              <li>Company work only reminder</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>6. GSC & Indexing</h3>
+            <ul>
+              <li>All GSC properties list</li>
+              <li>Verification status</li>
+              <li>Sitemap submitted yes/no</li>
+              <li>Pages indexed count</li>
+              <li>Last checked date</li>
+              <li>Issues / errors alert</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>7. Reports</h3>
+            <ul>
+              <li>Daily end-of-day submissions</li>
+              <li>What was built today</li>
+              <li>Domains purchased</li>
+              <li>Blockers / issues field</li>
+              <li>Manager read / unread status</li>
+              <li>History by date</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>8. Team Overview (Admin)</h3>
+            <ul>
+              <li>All employees in one view</li>
+              <li>Weekly target per person</li>
+              <li>VC compliance today</li>
+              <li>Websites completed count</li>
+              <li>Cursor usage comparison</li>
+              <li>Approve / reject websites</li>
+            </ul>
+          </div>
+          <div class="overview-card">
+            <h3>9. Rules & Policy</h3>
+            <ul>
+              <li>SEO department rules page</li>
+              <li>VC policy (6 hours/day)</li>
+              <li>Leave policy</li>
+              <li>Domain & ownership rules</li>
+              <li>Website completion checklist</li>
+              <li>Device policy (PC only)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">Suggested navigation flow</div>
+          <div class="panel-body">
+            <pre class="flow-diagram">LOGIN
+  └─ Employee Dashboard (home)
+       ├─ My Websites ──────► Add / Edit website entry
+       │                        ├─ Domain, game, keywords
+       │                        ├─ GitHub + Cloudflare links
+       │                        └─ Submit for review
+       ├─ Daily Log ──────────► VC timer + daily checklist + report
+       ├─ Weekly Targets ─────► 2 websites/week tracker
+       ├─ Cursor Usage ───────► Log sessions per domain
+       ├─ GSC Status ─────────► Monitor indexing per site
+       └─ Reports ────────────► End-of-day history
+
+MANAGER (admin role)
+  └─ Team Overview
+       ├─ See all employees progress
+       ├─ Approve / reject websites
+       ├─ Review daily reports
+       └─ Cursor usage audit</pre>
+          </div>
+        </div>
+
+        <p class="note">Developer note: Build as a web app similar to BWM (Blog Writing Management). Use auth login, role-based views (employee vs manager), and real-time or daily-updated stats. Each screenshot in this folder shows one screen layout.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
